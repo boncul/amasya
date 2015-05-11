@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -f .clarcache
+./generate.py
+gcc -I. clar.c main.c ascii.c -o testit
+./testit
